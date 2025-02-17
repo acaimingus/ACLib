@@ -1,2 +1,2 @@
 # ACLib
-Single-header C++ libraries for various things
+Currently work-in-progress.

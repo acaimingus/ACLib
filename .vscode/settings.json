@@ -1,0 +1,4 @@
+{
+    "cmake.sourceDirectory": "/home/adam/source/github/ACLib/src",
+    "C_Cpp.default.compilerPath": "/usr/bin/clang++-18"
+}
