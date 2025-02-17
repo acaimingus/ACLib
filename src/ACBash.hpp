@@ -12,6 +12,8 @@
 #include <sys/wait.h>
 #include <spawn.h>
 
+extern char **environ;
+
 namespace ACBash
 {
     void fromString(std::string input)
@@ -41,7 +43,6 @@ namespace ACBash
 
         // Execute the command using posix_spawnp
         pid_t pid;
-        extern char **environ;
         if(posix_spawnp(&pid, "sh", nullptr, nullptr, c_args.data(), environ) != 0){
             std::stringstream ss;
             ss << "Failed to execute command: " << strerror(errno);
